@@ -18,3 +18,10 @@ export const removeSelectedProduct = () =>{
         type: ActionTypes.REMOVE_SELECTED_PRODUCT,
     }
 }
+export const setCurrentPage = (page) =>{
+    debugger
+    return{
+        type: ActionTypes.SET_CURRENT_PAGE,
+        payload: page,
+    }
+}

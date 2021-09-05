@@ -1,7 +1,10 @@
 import { ActionTypes } from "../constants/action-types";
 
 const initialState = {
-    products: []
+    products: [],
+    currentPage: 1,
+    perPage: 4,
+    totalCount: 0
 }
 
 export const productReducer = (state = initialState, {type, payload}) =>{
@@ -10,6 +13,12 @@ export const productReducer = (state = initialState, {type, payload}) =>{
             return{
                 ...state,
                 products: payload
+            };
+        case ActionTypes.SET_CURRENT_PAGE:
+            debugger
+            return{
+                ...state,
+                currentPage: payload
             };
             
         default:
