@@ -1,0 +1,32 @@
+.mainBlock{
+    display: flex;
+    flex-wrap: wrap;
+}
+.myContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pag{
+    padding-top: 50px;
+}
+.pagEl{
+    border: 2px solid lightgray;
+    border-radius: 100%;
+    margin: 50px 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+.pagEl:hover{
+    background-color: rgb(110, 105, 105);
+    color: white;
+}
+.pagEl:active{
+    background-color: rgb(139, 146, 248);
+}
+.selectedPage{
+    border: 3px solid black;
+    border-radius: 100%;
+    margin: 50px 10px;
+    cursor: pointer;
+    padding: 5px;
+}
