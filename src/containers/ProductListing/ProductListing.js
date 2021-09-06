@@ -25,12 +25,10 @@ const ProductListing = () => {
 
     const lastproductIndex = currentPage * perPage;
     const firstproductIndex = lastproductIndex - perPage;
-    let currentproduct = '';
+    let currentproduct = [];
     debugger
     if(products.allProducts.products.length != 0){
         currentproduct = products.allProducts.products.slice(firstproductIndex, lastproductIndex);
-
-        const asda='sd'
     }
 
 
@@ -62,19 +60,6 @@ const ProductListing = () => {
         dispatch(setProducts(response));
     })
 
-    // const fetchProduct = async () =>{
-    //     const response = await axios
-    //         .get("https://fakestoreapi.com/products")
-    //         .catch((err) =>{
-    //         console.log("Err: ", err);
-    //     });
-    //     console.log("from here: ", response.data);
-    //     dispatch(setProducts(response.data));
-    // };
-
-    // useEffect(() => {
-    //     fetchProduct()
-    // }, []);
 
 
     const onPageClick = (page) => {
